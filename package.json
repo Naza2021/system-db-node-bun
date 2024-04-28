@@ -1,6 +1,6 @@
 {
   "name": "system-db",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "lib-es/bundle.js",
   "type": "module",
