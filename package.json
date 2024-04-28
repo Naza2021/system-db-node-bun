@@ -1,9 +1,10 @@
 {
   "name": "system-db",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "lib-es/bundle.js",
   "type": "module",
+  "types": "./dist/esm/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/esm/index.js",
