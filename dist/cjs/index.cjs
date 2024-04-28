@@ -36,6 +36,7 @@ const createSysDb = (id = "default") => {
             console.error(e);
         }
     });
+    db.clearDb = () => fs.writeFileSync(pathDb, JSON.stringify({}), { encoding: "utf-8" });
     return db;
 };
 

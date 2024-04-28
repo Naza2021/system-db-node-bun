@@ -8,7 +8,7 @@ import { debounce } from "throttle-debounce";
 
 export const createSysDb = <T extends Record<string, any>>(
   id?: string = "default"
-) => {
+): T & { clearDb: Function } => {
   const pathDb = `${path.join(
     path.resolve(__dirname, process.env.ENV === "local" ? "../../" : "./"),
     "tmp",
@@ -46,6 +46,9 @@ export const createSysDb = <T extends Record<string, any>>(
       console.error(e);
     }
   });
+
+  db.clearDb = () =>
+    fs.writeFileSync(pathDb, JSON.stringify({}), { encoding: "utf-8" });
 
   return db;
 };

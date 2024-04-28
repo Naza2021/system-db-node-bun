@@ -1,1 +1,1 @@
-{"version":3,"file":"system-db.d.ts","sourceRoot":"","sources":["../../src/factorys/system-db.ts"],"names":[],"mappings":"AAQA,eAAO,MAAM,WAAW,uCACjB,MAAM,MAyCZ,CAAC"}
+{"version":3,"file":"system-db.d.ts","sourceRoot":"","sources":["../../src/factorys/system-db.ts"],"names":[],"mappings":"AAQA,eAAO,MAAM,WAAW,uCACjB,MAAM;aACK,QAAQ;CA2CzB,CAAC"}
