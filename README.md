@@ -1,4 +1,4 @@
-## Typescript dependency boilerplate
+## Typescript dependency 
 
 Build bundle
 ```
