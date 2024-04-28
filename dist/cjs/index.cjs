@@ -9,7 +9,7 @@ var throttleDebounce = require('throttle-debounce');
 
 // @ts-nocheck
 const createSysDb = (id = "default") => {
-    const pathDb = `${path.join(path.resolve(__dirname, "../../"), "tmp", id)}.json`;
+    const pathDb = `${path.join(path.resolve(__dirname, process.env.ENV === "local" ? "../../" : "./"), "tmp", id)}.json`;
     let data = {};
     try {
         data = telejson.parse(fs.readFileSync(pathDb, { encoding: "utf-8" }) ?? "null");
