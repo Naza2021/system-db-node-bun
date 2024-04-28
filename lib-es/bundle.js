@@ -1,9 +1,9 @@
 import { DeepProxy } from '@qiwi/deep-proxy';
 import EventEmitter from 'events';
-import { debounce } from 'throttle-debounce';
-import path from 'path';
 import fs from 'fs';
+import path from 'path';
 import { parse, stringify } from 'telejson';
+import { debounce } from 'throttle-debounce';
 
 // @ts-nocheck
 const createSysDb = (id = "default") => {

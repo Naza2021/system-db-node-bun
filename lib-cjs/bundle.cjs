@@ -2,10 +2,10 @@
 
 var deepProxy = require('@qiwi/deep-proxy');
 var EventEmitter = require('events');
-var throttleDebounce = require('throttle-debounce');
-var path = require('path');
 var fs = require('fs');
+var path = require('path');
 var telejson = require('telejson');
+var throttleDebounce = require('throttle-debounce');
 
 // @ts-nocheck
 const createSysDb = (id = "default") => {

@@ -6,7 +6,9 @@ import path from "path";
 import { parse, stringify } from "telejson";
 import { debounce } from "throttle-debounce";
 
-export const createSysDb = (id?: string = "default") => {
+export const createSysDb = <T extends Record<string, any>>(
+  id?: string = "default"
+) => {
   const pathDb = `${path.join(
     path.resolve(__dirname, "../../"),
     "tmp",
