@@ -10,7 +10,7 @@ export const createSysDb = <T extends Record<string, any>>(
   id?: string = "default"
 ) => {
   const pathDb = `${path.join(
-    path.resolve(__dirname, "../../"),
+    path.resolve(__dirname, process.env.ENV === "local" ? "../../" : "./"),
     "tmp",
     id
   )}.json`;
