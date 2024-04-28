@@ -1,13 +1,15 @@
 {
   "name": "system-db",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "lib-es/bundle.js",
-  "types": "lib-es/types/index.d.ts",
   "type": "module",
   "exports": {
-    "import": "./lib-es/bundle.js",
-    "require": "./lib-cjs/bundle.cjs"
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/esm/index.d.ts"
+    }
   },
   "scripts": {
     "clean": "rimraf lib-es/*",
@@ -21,8 +23,13 @@
     "start": "tsc && node lib-es/index.js",
     "tsc": "tsc",
     "tsxCheck": "tsc --noEmit",
-    "release": "rollup -c && node .\\dev\\node-process.js"
+    "release": "rollup -c"
   },
+  "files": [
+    "dist/**/*",
+    "package.json",
+    "LICENSE"
+  ],
   "keywords": [],
   "author": "",
   "license": "MIT",

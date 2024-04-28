@@ -38,4 +38,4 @@ const createSysDb = (id = "default") => {
 };
 
 export { createSysDb };
-//# sourceMappingURL=bundle.js.map
+//# sourceMappingURL=index.js.map

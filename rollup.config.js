@@ -4,7 +4,7 @@ const RollupConfig = [{
     input: 'src/index.ts',  // Tu archivo de entrada
     external: id => id.indexOf('node_modules') >= 0,
     output: {
-        file: 'lib-es/bundle.js',  // Salida del bundle
+        file: 'dist/esm/index.js',  // Salida del bundle
         format: 'es',  // Formato CommonJS, adecuado para Node.js
         sourcemap: true,
     },
@@ -16,7 +16,7 @@ const RollupConfig = [{
     input: 'src/index.ts',  // Tu archivo de entrada
     external: id => id.indexOf('node_modules') >= 0,
     output: {
-        file: 'lib-cjs/bundle.cjs',  // Salida del bundle
+        file: 'dist/cjs/index.cjs',  // Salida del bundle
         format: 'cjs',  // Formato CommonJS, adecuado para Node.js
         sourcemap: true,
     },
